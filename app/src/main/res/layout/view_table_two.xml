@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.cq.tabletwodemo.table.FirstTextView
+        android:id="@+id/text"
+        android:layout_width="50dp"
+        android:layout_height="30dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:descendantFocusability="blocksDescendants" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text" />
+
+    <com.cq.tabletwodemo.table.TableRecyclerView
+        android:id="@+id/recyclerView_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recyclerView_top"
+        android:layout_toEndOf="@id/recyclerView_left"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+</RelativeLayout>

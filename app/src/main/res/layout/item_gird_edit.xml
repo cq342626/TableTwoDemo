@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cq.tabletwodemo.table.TableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/black">
+
+    <com.cq.tabletwodemo.table.TableInputEditText
+        android:id="@+id/item_grid_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:background="@color/holo_green_light"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_text_size" />
+
+</com.cq.tabletwodemo.table.TableLinearLayout>
